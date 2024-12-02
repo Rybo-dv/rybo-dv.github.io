@@ -29,7 +29,7 @@ header .logo {
     align-self: center;
     text-decoration: none;
     color: #5B8FB9;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 600;
     cursor: default;
 
@@ -53,9 +53,9 @@ header div {
 header div a{
     display: inline-block;
     position: relative;
-    padding: 0 50px;
+    padding: 0 2.5vw;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: .9em;
     font-weight: bold;
     color: #5B8FB9;
     transition: 0.3s;
@@ -84,13 +84,13 @@ section {
 }
 
 .home-content {
-    min-width: 200px;
-    width: 600px;
+    min-width: 150px;
+    width: 40vw;
 }
 
 .home-sec h1 {
     color: #B6EADA;
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 600;
     line-height: 1.6;
     opacity: 0;
@@ -100,7 +100,7 @@ section {
 
 .home-sec h3 {
     color: #5B8FB9;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 15px;
     opacity: 0;
     animation: fade-in-right 1s ease 0.3s;
@@ -109,7 +109,7 @@ section {
 
 .home-sec p {
     color: white;
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 1.6;
     opacity: 0;
     animation: fade-in-right 1s ease 0.4s;
@@ -120,7 +120,7 @@ section {
     position: relative;
     border-radius: 30%;
     min-width: 200px;
-    width: 500px;
+    width: 400px;
     opacity: 0;
 
     animation: fade-in-left 1s ease 0.2s;
@@ -150,13 +150,13 @@ section {
 
 .about-sec h1, .about-sec2 h1 {
     color: #5B8FB9;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.5;
 }
 
 .about-sec p, .about-sec2 p {
     color: white;
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 1.6;
 }
 
@@ -188,12 +188,12 @@ section {
 }
 
 .about-sec img {
-    width: 110px;
+    width: 90px;
 }
 
 /* about section 2 */
 .about-sec2 div.about-img img{
-    width: 120px;
+    width: 90px;
 }
 
 .about-sec2 div.about-img {
@@ -230,7 +230,7 @@ section {
 .projects-sec h1{
     text-align: center;
     color: #B6EADA;
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: 2rem;
 }
 
@@ -243,17 +243,17 @@ section {
 #projects-sec-div p {
     color: white;
     text-align: center;
-    font-size: 1.1em;
-    line-height: 2;
+    font-size: 1em;
+    line-height: 1.6;
 }
 
 #projects-sec-div img {
-    width: 300px;
+    width: 250px;
 }
 
 .projects-img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 270px;
     align-self: flex-start;
     margin: 5vh;
 }
@@ -285,13 +285,13 @@ section {
 .contact-sec h1 {
     color: #5B8FB9;
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 2;
 }
 
 .contact-sec p {
     color:#B6EADA;
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-align: center;
     max-width: 600px;
 }
@@ -300,7 +300,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2rem;
+    margin: 1.6rem;
     max-width: fit-content;
     gap: 100px;
 }
@@ -310,9 +310,9 @@ section {
     text-decoration: none;
     background-color: #5B8FB9;
     color: #020011;
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 20%;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 600;
     transition: 0.2s ease-in-out;
 }
@@ -413,6 +413,11 @@ footer div a:hover {
         font-size: .8em;
     }
 
+    .home-content {
+        width: 80vw;
+    }
+    
+
     /* home */
     .home-sec {
         justify-content: center;
@@ -442,11 +447,6 @@ footer div a:hover {
     }
 
     /* about */
-    .about-sec,
-    .about-sec2 {
-        justify-content: center;
-    }
-
     .about-content,
     .about-img {
         width: 300px;
@@ -489,5 +489,39 @@ footer div a:hover {
         padding: 1rem;
         font-size: 0.8em;
         min-width: 90px;
+    }
+}
+
+@media (max-width: 985px) {
+    .home-sec {
+        justify-content: center;
+    }
+
+    .home-sec {
+        justify-content: center;
+    }
+
+    .home-sec h1,
+    .home-sec h3,
+    .home-sec p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-sec,
+    .about-sec2 {
+        justify-content: center;
+    }
+
+    .about-sec h1,
+    .about-sec2 h1,
+    .about-sec p,
+    .about-sec2 p {
+        text-align: center;
+    }
+
+    .about-img {
+        width: 50vw;
     }
 }
